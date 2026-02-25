@@ -32,6 +32,6 @@ def main():
         print("El programa fallo por otro problema")
     finally:
         print("El programa finalizo.")             
-
+ 
 if __name__ =="__main__":    
    main()
