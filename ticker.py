@@ -20,3 +20,17 @@ def calcular_promedio(lista_notas):
 
 
 print("Prueba promedio Myraa", calcular_promedio(estudiantes[1]["Notas"]))
+def reporte(estudiantes):
+    print("---Reporte Final---")
+    for est in estudiantes:
+        suma = sum(est["Notas"])
+        prom = suma / len(est["Notas"])
+
+        if prom >=3.0:
+           estado = "Aprobado"
+        else:
+            estado = "Reprobado"
+
+        print(f"estudiantes: {est["nombre"]} su estado es {estado}")
+
+reporte(estudiantes)
